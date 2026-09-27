@@ -1,0 +1,20 @@
+{
+  "name": "act4k1007-reclaimer",
+  "interface": {
+    "displayName": "Act4k1007 Reclaimer"
+  },
+  "plugins": [
+    {
+      "name": "act4k1007-reclaimer",
+      "source": {
+        "source": "local",
+        "path": "./plugins/act4k1007-reclaimer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer"
+    }
+  ]
+}

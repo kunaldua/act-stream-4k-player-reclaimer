@@ -1,0 +1,36 @@
+name: Tested-firmware bug
+description: Report a problem on the exact supported C2.3.7 firmware
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Safety checks
+      options:
+        - label: verify_device.py reported an exact match before any device change.
+          required: true
+        - label: I have not attached credentials, unique identifiers, OEM files, or raw logs.
+          required: true
+  - type: dropdown
+    attributes:
+      label: Stage
+      options:
+        - Remote-v1 pairing
+        - Android TV Settings
+        - ADB authorization
+        - APK verification or installation
+        - Setup-state values
+        - Home selection
+        - SetupWraith user removal
+        - Reboot or input verification
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Sanitized output
+      description: Include only the smallest output needed to reproduce the problem.

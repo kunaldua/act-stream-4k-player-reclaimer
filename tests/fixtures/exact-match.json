@@ -1,0 +1,24 @@
+{
+  "properties": {
+    "ro.product.model": "ACT4K1007",
+    "ro.product.manufacturer": "SkyworthDigital",
+    "ro.product.brand": "ACT",
+    "ro.product.name": "IPBox",
+    "ro.product.device": "IPBox",
+    "ro.product.board": "bigfish",
+    "ro.board.platform": "bigfish",
+    "ro.hardware": "bigfish",
+    "ro.boot.hardware": "bigfish",
+    "ro.build.fingerprint": "ACT/IPBox/IPBox:9/PPR1.180610.011/C2.3.7_20210525:user/release-keys",
+    "ro.build.version.release": "9",
+    "ro.build.version.sdk": "28",
+    "ro.build.version.security_patch": "2021-05-05",
+    "ro.product.cpu.abilist": "armeabi-v7a,armeabi",
+    "ro.stb.chip": "HI3798MV200"
+  },
+  "settings": {
+    "global.device_provisioned": "1",
+    "secure.user_setup_complete": "0",
+    "secure.tv_user_setup_complete": "null"
+  }
+}

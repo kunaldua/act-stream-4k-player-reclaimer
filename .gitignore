@@ -1,0 +1,51 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Android and Flutter build output
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+**/build/
+**/.gradle/
+**/local.properties
+
+# Release binaries are GitHub Release assets, never Git contents.
+*.apk
+*.aab
+*.img
+*.bin
+*.zip
+*.tar
+*.tar.gz
+
+# Signing, pairing and other credentials
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+*.cer
+*.crt
+*password*
+.env
+.env.*
+adbkey*
+id_rsa*
+google-services.json
+.reclaimer-credentials/
+
+# Raw device evidence may contain identifiers. Only sanitized fixtures belong
+# under tests/fixtures.
+*-probe.json
+diagnostics/
+private/
+
+# Extracted OEM or platform components
+*.jar
+*.vdex
+*.odex
+*.oat
+*.dex

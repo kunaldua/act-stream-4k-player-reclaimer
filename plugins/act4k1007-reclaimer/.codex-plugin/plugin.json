@@ -1,0 +1,24 @@
+{
+  "name": "act4k1007-reclaimer",
+  "version": "0.1.0",
+  "description": "Safely reclaim verified ACT4K1007 Android TV boxes with a reversible launcher-first workflow.",
+  "author": {
+    "name": "ACT4K1007 Reclaimer contributors"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ACT4K1007 Reclaimer",
+    "shortDescription": "Reclaim verified ACT4K1007 boxes safely",
+    "longDescription": "Verify an ACT4K1007 box, recover Android TV Settings, install the tested FLauncher compatibility build, and preserve a documented rollback path.",
+    "developerName": "ACT4K1007 Reclaimer contributors",
+    "category": "Developer",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": [
+      "Use $act4k1007-reclaimer to inspect my ACT4K1007 safely.",
+      "Use $act4k1007-reclaimer to resume a verified recovery.",
+      "Use $act4k1007-reclaimer to explain the rollback options."
+    ],
+    "brandColor": "#D94A64"
+  }
+}

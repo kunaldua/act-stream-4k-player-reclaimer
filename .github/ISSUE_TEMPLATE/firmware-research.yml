@@ -1,0 +1,30 @@
+name: Research another firmware
+description: Submit a sanitized identity report for an unsupported ACT4K1007 variant
+title: "Firmware research: "
+labels: ["firmware-research"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach raw probes, credentials, firmware dumps, system APKs, serials, MAC addresses, Android IDs, or account information.
+  - type: checkboxes
+    attributes:
+      label: Authorization and privacy
+      options:
+        - label: I own this box or am authorized to modify it.
+          required: true
+        - label: I reviewed the report and removed unique identifiers and credentials.
+          required: true
+  - type: textarea
+    attributes:
+      label: Allowlisted support report
+      description: Paste the JSON created by support_report.py after reviewing it.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Current behavior and goal
+      description: Describe the visible boot state and what you want the box to do.
+    validations:
+      required: true

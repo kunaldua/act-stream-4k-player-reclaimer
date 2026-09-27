@@ -1,0 +1,5 @@
+interface:
+  display_name: "ACT4K1007 Reclaimer"
+  short_description: "Recover verified ACT4K1007 Android TV boxes"
+  brand_color: "#D94A64"
+  default_prompt: "Use $act4k1007-reclaimer to inspect and recover my ACT4K1007 safely."
