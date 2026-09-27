@@ -15,7 +15,7 @@ turn a similar product name into an assumed hardware match.
   any other authentication or activation control.
 - Do not root, unlock, flash, repartition, format, or disable verified boot.
 - Treat the device as unsupported unless every required identity value matches
-  the profile in `profiles/act4k1007-c2.3.7.json` at the repository root.
+  `references/act4k1007-c2.3.7.json` in this skill.
 - Preserve ACT packages other than the tested per-user SetupWraith removal.
 - Never publish raw logs, pairing keys, ADB keys, serials, MAC addresses,
   Android IDs, account names, or home paths.

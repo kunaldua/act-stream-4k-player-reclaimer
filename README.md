@@ -56,7 +56,7 @@ The plugin explains each action, starts with read-only inspection, pauses for ac
 
 5. Follow the prompts. Keep the box visible on a TV and have its original remote available.
 
-The repository is currently private, so adding it works only for GitHub accounts with access and a working GitHub credential. Once it is public, anyone can use the same command. See OpenAI's [Codex plugin documentation](https://developers.openai.com/plugins/build/plugins) for marketplace management.
+This repository is a public Codex marketplace, so anyone can add it with the command above. See OpenAI's [Codex plugin documentation](https://developers.openai.com/plugins/build/plugins) for marketplace management.
 
 Codex does not silently unlock the device. It walks the owner through discovery, remote pairing, Settings access, identity checks, approved changes, reboot verification, and rollback if needed. Pairing codes and IP addresses are session inputs and must never be committed to this repository.
 
@@ -64,14 +64,14 @@ Codex does not silently unlock the device. It walks the owner through discovery,
 
 Use [docs/MANUAL.md](docs/MANUAL.md) if you prefer to run the commands yourself. You will need:
 
-- a Mac or Linux computer on the same trusted LAN as the box;
+- an Apple-silicon Mac on the same trusted LAN as the box (the published Remote-v1 helper is the tested Darwin arm64 build);
 - Ethernet connected to the box for the initial remote-control and ADB stages;
 - the original remote, a display, and optionally a USB keyboard and mouse;
 - Android platform-tools (`adb`);
 - `atvremote` 0.1.3 for the legacy Remote v1 pairing flow;
 - the verified **FLauncher (Reclaimer)** APK from this project's matching release.
 
-Until a signed project release is published, the install stage is intentionally limited to maintainers who already possess the locally verified APK. Do not substitute an APK from a file-sharing site or rebuild one and assume it is equivalent; verify the release checksum first.
+Download the APK only from this project's matching GitHub Release and verify it against [`checksums/SHA256SUMS`](checksums/SHA256SUMS). Do not substitute an APK from a file-sharing site or rebuild one and assume it is equivalent.
 
 ## What happens in a guided recovery
 
@@ -144,9 +144,10 @@ Maintainers should also inspect the entire Git history before making a private r
 
 ## Development
 
-Run the standard-library unit tests and public-tree audit before committing:
+Run package validation, the standard-library unit tests, and the public-tree audit before committing:
 
 ```sh
+python3 scripts/validate_package.py
 python3 -m unittest discover -s tests -v
 python3 scripts/audit_public_tree.py
 ```
